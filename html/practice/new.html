@@ -1,0 +1,34 @@
+<html>
+<head></head>
+    <body>
+    <input type="text" id="fname" onblur="myFunction()"> first name<br><br>
+    <input type="number" maxlength="10" onfocus="myfunc(this)"> mobile no<br><br>
+    <textarea rows="9" cols="9" id="demo" onclick="myfunction(this)"maxlength="10"></textarea>comments<br>
+      <a href="empty.html"><img src="CU_logo.png" value="submit" id="demo1" onmouseover="mouse(this)" onmouseout="mouse1(this)" width="204" height="248"> </a>
+        <script>
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}   
+    function myfunc(y)
+            {
+
+                 y.style.background = "yellow";
+            }
+    function mouse(z)
+            {
+                z.style.height="164px";
+                z.style.width="148px";
+            }
+             function mouse1(z)
+            {
+                z.style.height="248px";
+                z.style.width="204px";
+            }
+            function myfunction(q)
+            {
+               alert("write here");
+            }
+</script>
+
+    </body></html>

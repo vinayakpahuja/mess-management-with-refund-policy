@@ -1,0 +1,23 @@
+<html>
+<body>
+<h3>Grocery Items List:</h3>
+<ol id="demo"><li>Milk <li>Bread <li>Juice <li>Fruits </ol>
+<button onclick="func1()">Add Item</button>
+<button onclick="func2()">Remove Item</button>
+<script language="javascript">
+function func1()
+{
+var list=document.createElement("li");
+var item=document.createTextNode("Face Wash");
+list.appendChild(item);
+var parent=document.getElementById("demo").appendChild(list);
+
+}
+function func2()
+{
+var parent=document.getElementById("demo");
+parent.removeChild(parent.childNodes[0]);
+}
+</script>
+</body>
+</html>

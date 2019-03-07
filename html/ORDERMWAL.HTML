@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+    <head>
+    <style>
+        H1{
+            text-align: CENTER;
+            font-size: 180%;
+            
+        }
+        BODY{
+            background-image: url("light.jpg");
+        }
+        H2
+        {
+            text-align: center;
+        }
+        P
+        {
+            text-align: CENTER;
+            font-size: 150%;
+            color: white;
+        }
+    
+    </style></HEAD>
+    <body><BR>
+        <h1><B><U>WELCOME TO MESS MANAGEMENT SYSTEM</U></B></h1>
+        <h1><B><BR><PRE>     *************CHOOSE YOUR MEAL*************  <B></h1>
+            <body>
+    
+  <P>
+      <INPUT TYPE="RADIO" id="2" NAME="ITEM" VALUE="BREAKFAST">BREAKFAST
+          <INPUT TYPE="RADIO" id="2" NAME="ITEM" VALUE="LUNCH">LUNCH
+              <INPUT TYPE="RADIO" id="2" NAME="ITEM" VALUE="SNACKS">SNACKS
+                  <INPUT TYPE="RADIO" id="2" NAME="ITEM" VALUE="DINNER">DINNER<BR><BR>
+                      
+                      
+                  
+                  BILLING AMOUNT-:<BR><BR>
+                  BREAKFAST=RS 50<BR>
+                      LUNCH=RS 60<BR>
+                      SNACKS=RS 30<BR>
+                      DINNER=RS 50
+                      <BR></P>
+                        <h1><B><PRE>     *****************************************  <B></h1>
+                            <BR>
+                      
+                      NOTE:-If submit option is pressed once, undo is not possible.So please make sure about your choice.
+                                <p><input type="submit" value="submit" onclick="fun()">&nbsp;<button><a href="dayscholar.html" TARGET="_SELF">BACK</a></button>
+                      </p>
+                      <script>
+                      function fun()
+                          {
+                              var radios = document.getElementsByName('ITEM');
+
+for (var i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+        // do whatever you want with the checked radio
+        if(radios[i].value=="BREAKFAST")
+            {
+                
+                alert ("RS 50 IS ADDED TO YOUR ACCOUNT");
+                window.location.href='index.html';
+            }
+        if(radios[i].value=="LUNCH")
+            {
+                
+                alert ("RS 60 IS ADDED TO YOUR ACCOUNT");
+                window.location.href='index.html';
+            }
+        if(radios[i].value=="SNACKS")
+            {
+                
+                alert ("RS 30 IS ADDED TO YOUR ACCOUNT");
+                window.location.href='index.html';
+            }
+        if(radios[i].value=="DINNER")
+            {
+                
+               alert ("RS 50 IS ADDED TO YOUR ACCOUNT");
+                window.location.href='index.html';
+            }
+
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+                              
+                              
+                          }</script>
+                      </body>
+    </HTML>

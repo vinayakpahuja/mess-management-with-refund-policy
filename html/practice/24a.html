@@ -1,0 +1,26 @@
+)<html>
+<head>
+	<title>24(i)</title>
+</head>
+<body>
+	<p id="q1">
+		Random Number between 0 to 100 is: </p>
+<p id="q2">
+		<br>7<sup>13</sup> = </p>
+	<p id="q3">
+		<br>Under root of 7<sup>13</sup> = </p>
+	<p id="q4">
+		<br>Random Number between 5 to 15 is:</p>
+	<script>
+		var a = Math.random();
+		var q1 = document.getElementById('q1');
+		q1.innerHTML += (" " + Math.ceil(a*100));
+		var b = Math.pow(7,13);
+		document.getElementById('q2').innerHTML += (" " + b);
+		var c = Math.sqrt(b);
+		document.getElementById('q3').innerHTML += (" " + c);	
+		var d= document.getElementById('q4');
+		q4.innerHTML += (" "+ Math.ceil(a*(10)+5));
+	</script>
+</body>
+</html>

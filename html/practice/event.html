@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>23</title>
+</head>
+<body>
+	<form onsubmit="S1()">
+		first Name: <input type="text" id="nam1" onkeydown="red(1)" onkeyup="blue(1)"><br><br>
+		last Name: <input type="text" id="nam2" onfocus="red(2)" onblur="blue(2)"><br><br>	
+		<input type="submit" name="SUBMIT">
+		<input type="reset" name="RESET">
+	</form>
+	<br><br>
+	<img src="CU_logo.png" id="im1" height="300px" width="250px" ondbclick="Imagex()" onmouseleave="Dimen()">
+	<script >
+		function S1() {
+			var a = document.getElementById('nam1').value;
+			var b = document.getElementById('nam2').value;
+			window.alert("FirstName: " + a +"\n"+"LastName: " + b);
+		}
+		function Imagex(){
+			document.getElementById('im1').src = "flash.jpg";			
+		}
+		function Dimen() {
+			document.getElementById('im1').style.height="500px";
+			document.getElementById('im1').style.width="400px";
+		}
+		function red(a) {
+			var x;
+			if (a == 1) {
+				x = document.getElementById("nam1");
+			} else if (a == 2) {
+				x = document.getElementById("nam2");
+			}		
+			x.style.backgroundColor = "red";
+		}
+		function blue(a) {
+			var x;
+			if (a == 1) {
+				x = document.getElementById("nam1");
+			} else if (a == 2) {
+				x = document.getElementById("nam2");
+			}		
+			x.style.backgroundColor = "blue";
+		}
+	</script>
+</body>
+</html>

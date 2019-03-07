@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>22(i)</title>
+</head>
+<body>
+Enter a number: <input type="number" id="n1"><br><br>
+<button onclick="calfac()">Submit</button>
+<p id="fac"></p>
+	<script>
+		function calfac() {
+			var a = parseInt(document.getElementById('n1').value);
+			var factorial = 1;
+			for(var i=2;i<=a;i++){
+				factorial*= i;
+			}
+			var res = document.getElementById('fac');
+			res.innerHTML = a + "! = " + factorial;
+		}
+	</script>
+</body>
+</html>
+
+ii) 
+<html>
+<head>
+	<title>22(ii)</title>
+</head>
+<body>
+	<script>
+		for (var i = 2; i < 100; i++) {
+			var flag = 1;
+			for (var j = 2; j <=Math.sqrt(i); j++) {
+				if (i%j==0) {
+					flag = 0;
+					break;
+				}
+			}
+			if (flag==1) {
+				document.write(i + "<br>");
+			}
+		}
+	</script>
+</body>
+</html>

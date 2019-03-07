@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>27</title>
+</head>
+<body>
+	<script>
+		var parentList = document.createElement('ul');
+		document.body.appendChild(parentList);
+		document.body.appendChild(document.createElement("br"));
+		var createButton = document.createElement('button');
+		createButton.innerHTML = 'Add new Element';
+		createButton.setAttribute("onclick", "list()");
+		document.body.appendChild(createButton);
+		document.body.appendChild(document.createElement("br"));
+		function list() {
+			var thisItem = window.prompt("Enter new item to add to list");
+			var element1 = document.createElement('li');
+			element1.appendChild(document.createTextNode(thisItem));
+			parentList.appendChild(element1);
+		}
+		function rem() {
+			
+			parentList.removeChild(parentList.children[0]);
+		}
+		document.body.appendChild(document.createElement("br"));	
+		var removeButton = document.createElement('button');
+		removeButton.innerHTML = 'Remove 1st Element';
+		removeButton.setAttribute("onclick", "rem()");
+		document.body.appendChild(removeButton);
+	</script>	
+</body>
+</html>

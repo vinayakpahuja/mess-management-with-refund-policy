@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "0",
+    "Name": "northwind database backup-Sql Server 2005 and 2008",
+    "DevelopmentStatus": "Alpha",
+    "Description": "Northwind.bak.zip - Northwind database backup for  Sql Server 2005 and 2008.\nUnzip / decompress the file then use the *Restore Database* option from Sql Server Management Studio 2005 / 2008 to restore the database\n\nNorthwind.sql.zip -  - Northwind database creation script for  Sql Server 2005 and 2008.\nCreate a database called northwind in your Sql Server then.\nUnzip / decompress the file then open the sql file in Sql Server Management Studio 2005 / 2008 and hit F5.\nOR \nrun the below command (sample)\nsqlcmd -S *Localhost* -d Northwind -i *D:\\Sql\\Northwind.sql*",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2011-08-11T23:40:52.277-07:00",
+    "Files": [
+      {
+        "Id": "e65f190c-f983-4942-8217-5c971c066a19",
+        "FileName": "Northwind.bak.zip",
+        "Url": "./0/e65f190c-f983-4942-8217-5c971c066a19",
+        "Type": "Example",
+        "UploadDate": "2011-08-11T23:28:24.28-07:00"
+      },
+      {
+        "Id": "0475eb1a-b7a8-4501-8281-e2fae5e17bda",
+        "FileName": "northwind.sql.zip",
+        "Url": "./0/0475eb1a-b7a8-4501-8281-e2fae5e17bda",
+        "Type": "Source Code",
+        "UploadDate": "2011-08-11T23:40:52.12-07:00"
+      }
+    ]
+  }
+]

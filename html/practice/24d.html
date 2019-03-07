@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>24(iv)</title>
+</head>
+<body>
+	<script>
+		var a = [1,2,3,4,5,6,7];
+		document.write("Original Array: ");
+		document.write(a);
+		a.splice(2,2,354,56);
+		document.write("<br>New Array: ");
+		document.write(a);
+
+		var b = [50,2,11,9,45,10,3];
+		document.write("<br>Unsorted Array: ");
+		document.write(b);
+		b.sort(function(c,d) {
+			return c-d;
+		});
+		document.write("<br>Sorted Array" + b);
+		var Arr = [1,35,23,124,12,2,4];
+		document.write("<br> Original Array: " + Arr);
+		Arr.push(Arr.shift());
+		document.write("<br> New Array:" + Arr);
+	</script>
+</body>
+</html>

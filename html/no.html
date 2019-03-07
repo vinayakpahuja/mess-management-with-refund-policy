@@ -1,0 +1,32 @@
+<html>
+<head>
+    <style>
+    BODY
+        {
+            background-image: URL("food.jpeg");
+        }
+        h1
+        {
+            color: white;
+            text-align: center;
+        }
+    </style></head>
+<BODY>
+    
+    <h1><u><b>ENJOY YOUR MEAL</b></u><BR><BR><BR><BR><BR>
+        YOUR MEAL CODE IS:<BR><BR>
+        
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+        <BR><BR><BR>
+            NOTE-: You are only allowed to have a meal if you have a valid meal code .
+           
+            
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = Math.floor(Math.random()*10000+1);
+}
+</script></h1>
+    
+    </BODY></html>

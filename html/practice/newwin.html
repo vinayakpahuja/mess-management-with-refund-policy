@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head><body>
+<script>
+var w;
+function openwindow() {
+    w = window.open("https://www.youtube.com/watch?v=JJAhqeVhCfU");
+    w.focus();
+}
+
+function myFunction() {
+    w.resizeTo(500, 500);
+    w.focus();
+}
+
+</script>
+
+
+
+<button type="submit" onclick="openwindow()">Create window</button>
+<button onclick="myFunction()">Resize window</button>
+
+</body>
+</html>

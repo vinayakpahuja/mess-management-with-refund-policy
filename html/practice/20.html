@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Experiment no.20</title>
+</head>
+<body>
+<h1>Event Handling</h1>
+Blur:<input type="text" onblur="func1()"/></br>
+Focus:<input type="text" onfocus="func2()"/></br>
+Click<input type="text" onclick="clk()"/></br>
+double click<input type="text" ondblclick="dbl()"/></br>
+keydown<input type="text" onkeydown="func6()"/></br>
+keyup<input type="text" onkeyup="func7()"/></br>
+<select name="dropdownlist" id="selected flower" onchange="flower()">
+<option value="rose">rose</option>
+<option value="Lily">lily</option>
+<option value="Jasmine">Jasmine</option>
+<option value="Lotus">lotus</option>
+</select></br>
+load<p onload="load()">
+</p></br>
+unload<p onunload="unload()"></p></br>
+<form onreset="func3()" onsubmit="func4()">
+Name:<input type="text"/></br>
+<input type="reset"/>
+<input type="submit"/></br>
+</form>
+select<input type="text" value="Good Morning" onselect="func5()"/></br>
+<h1 onmouseover="func8()">mouse over</h1></br>
+<h1 onmouseout="func9()">mouse out</h1></br>
+<script type="text/javascript">
+function func1()
+{alert("blur");}
+function func2()
+{alert("focus");}
+function clk()
+{alert("clicked!!!!");}
+function dbl()
+{alert("double clicked!!!");}
+function flower()
+{confirm("change the value");
+}
+function func3()
+{confirm("reset?");}
+function func4()
+{confirm("submit?");}
+function func5()
+{alert("Some text has been selected");}
+function load()
+{alert("loaded");}
+function unload()
+{alert("unloaded");}
+function func6()
+{alert("key down");}
+function func7()
+{alert("key up");}
+function func8()
+{alert("mouse is over the text");}
+function func9()
+{alert("mouse is out of the text");}
+</script>
+</body>
+</html>

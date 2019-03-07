@@ -1,0 +1,95 @@
+<html>
+<head>
+    <STYLE>
+    H1{
+        text-align: CENTER;
+        font-size: 250%;
+        
+       }
+        H6{
+            text-align: center;
+            font-size: 250%;
+        }
+        body
+        {
+            background-image: url("mess2.png");
+            opacity:1.0;
+        }
+    P{
+       
+        text-align: CENTER;
+        font-size: 180%;
+        
+    
+        }
+        P#3{
+            text-align: CENTER;
+            font-size: 145%;
+        }
+        
+    </STYLE>
+    </head>
+<body>
+    <u><H6>REFUND POLICY</H6></u>
+    
+  <P><B><U>
+      CHOOSE THE ITEM YOU DONT TO EAT</U></B> <BR></P><P ID="3">
+      <INPUT TYPE="RADIO" id="2" NAME="ITEM" VALUE="BREAKFAST">BREAKFAST
+          <INPUT TYPE="RADIO" id="2" NAME="ITEM" VALUE="LUNCH">LUNCH
+              <INPUT TYPE="RADIO" id="2" NAME="ITEM" VALUE="SNACKS">SNACKS
+                  <INPUT TYPE="RADIO" id="2" NAME="ITEM" VALUE="DINNER">DINNER
+                      </P>
+                  <P>
+                  REFUND AMOUNT-:<BR><BR>
+                  BREAKFAST=RS 50<BR>
+                      LUNCH=RS 60<BR>
+                      SNACKS=RS 30<BR>
+                      DINNER=RS 50</P>
+                      NOTE:-If submit option is pressed once, undo is not possible.So please make sure about your choice.
+                      <p><input type="button" value="submit" style="color:black;" onclick="fun()"><pre>                                                                                                                                                                            <a href="project.html" style="font-size:170%;color:blueviolet">LOGOUT</a></pre></p>
+                      <script>
+                      function fun()
+                          {
+                              var radios = document.getElementsByName('ITEM');
+
+for (var i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+        // do whatever you want with the checked radio
+        if(radios[i].value=="BREAKFAST")
+            {
+                
+                alert("RS 50 is credited to your wallet");
+                window.location.href='index.html';
+            }
+        if(radios[i].value=="LUNCH")
+            {
+                
+                    alert("RS 60 is credited to your wallet");
+                window.location.href='index.html';
+            }
+        if(radios[i].value=="SNACKS")
+            {
+                
+                  alert("RS 30 is credited to your wallet");
+                window.location.href='index.html';
+            }
+        if(radios[i].value=="DINNER")
+            {
+                
+                 alert("RS 50 is credited to your wallet");
+                window.location.href='index.html';
+            }
+
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+                              
+                              
+                          }</script>
+                      </body></html>
+                      
+                      
+                      
+                      
+                      

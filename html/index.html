@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Transparent Login Form</title>
+		<link rel="stylesheet" href="style.css">
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+        
+	</head>
+	<body>
+		<div class="loginBox">
+			<img src="user.png" class="user">
+			<h2 id="hotDogOutput ">Log In Here</h2>
+<!--			<form>-->
+				<p>NAME-</p>
+				<input type="text"  id="fname" placeholder="Enter your name" >
+				<p>Password</p>
+				<input type="password" maxlength ="10" id="fpass" placeholder="••••••" >
+				<button id="savebutton" onclick="func1()">SIGN IN</BUTTON>
+				
+<!--			</form>-->
+		</div>
+
+        <script>
+      
+        function func1()
+            {
+                var name;
+                var pass;
+                name=document.getElementById('fname').value;
+                pass=document.getElementById('fpass').value;
+                if(name=== '')
+                    {
+                        alert("enter valid name");
+                    }
+                else if(name.length>7)
+                    {
+                        alert("user not exist");
+                    }
+                else if(pass==='')
+                    {
+                        alert("invalid password");
+                    }
+               else  if(name!=pass)
+                    {
+                        alert("password does not match");
+                    }
+                else{
+                    console.log("correct" + window.location.href);
+                    window.location.href = 'hosteler.html'
+                }
+              
+            }
+        </script>
+	</body>
+</html>
